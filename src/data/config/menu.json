@@ -1,0 +1,24 @@
+{
+  "main": [
+    {
+      "label": "Accoglienza",
+      "href": "/accoglienza"
+    },
+    {
+      "label": "Cucina",
+      "href": "/cucina"
+    },
+    {
+      "label": "Da Fare",
+      "href": "/dafare"
+    },
+    {
+      "label": "Prezzi",
+      "href": "/offerte"
+    },
+    {
+      "label": "Contatti",
+      "href": "/contatti"
+    }
+  ]
+}

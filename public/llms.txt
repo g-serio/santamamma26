@@ -1,0 +1,37 @@
+# SantaMamma — Agriturismo in Sicilia
+
+Scopri l'autentico agriturismo siciliano tra querceti secolari, cucina km.0 e paesaggi mozzafiato nel cuore del Parco dei Nebrodi.
+
+> **AI Agents:** This site is built with OlonJS. It exposes a native Model Context Protocol (MCP) manifest for direct structural interaction. 
+> To read the site map or access structured content, use the URI `olon://pages` or `olon://pages/[slug]`.
+> Endpoint: `/mcp-manifest.json`
+
+## Pages
+
+- **[Accoglienza — SantaMamma Agriturismo](/accoglienza)** (`accoglienza`)
+  Stanze accoglienti nel cuore del Parco dei Nebrodi. Soggiorna nella masseria di Alfonso e Giusy e vivi la Sicilia autentica.
+  *Contract:* `/schemas/accoglienza.schema.json` | *Manifest:* `/mcp-manifests/accoglienza.json`
+
+- **[Contatti e Prenotazioni — SantaMamma Agriturismo](/contatti)** (`contatti`)
+  Prenota il tuo soggiorno a SantaMamma. Siamo a Acquedolci (ME), nel Parco dei Nebrodi. Scrivici o chiamaci.
+  *Contract:* `/schemas/contatti.schema.json` | *Manifest:* `/mcp-manifests/contatti.json`
+
+- **[La Cucina km.0 — SantaMamma Agriturismo](/cucina)** (`cucina`)
+  Cucina autentica siciliana a km.0. Verdure dall'orto, formaggi artigianali, erbe fresche. I sapori di una volta in una masseria dei Nebrodi.
+  *Contract:* `/schemas/cucina.schema.json` | *Manifest:* `/mcp-manifests/cucina.json`
+
+- **[Cose da Fare — SantaMamma Agriturismo](/dafare)** (`dafare`)
+  Escursioni nel Parco dei Nebrodi, borghi medievali, spiagge siciliane. Scopri tutto quello che puoi fare vicino a SantaMamma.
+  *Contract:* `/schemas/dafare.schema.json` | *Manifest:* `/mcp-manifests/dafare.json`
+
+- **[JsonPages Docs — Onboarding Governance](/docs)** (`docs`)
+  Percorso Governance completo: capsule, IDAC, registry, schema, overlay e checklist per integrare il CMS con governance piena.
+  *Contract:* `/schemas/docs.schema.json` | *Manifest:* `/mcp-manifests/docs.json`
+
+- **[SantaMamma — Agriturismo nel Parco dei Nebrodi, Sicilia](/)** (`home`)
+  Scopri l'autentico agriturismo siciliano tra querceti secolari, cucina km.0 e paesaggi mozzafiato nel cuore del Parco dei Nebrodi.
+  *Contract:* `/schemas/home.schema.json` | *Manifest:* `/mcp-manifests/home.json`
+
+- **[Prezzi e Offerte — SantaMamma Agriturismo](/offerte)** (`offerte`)
+  Scopri le tariffe per il soggiorno, mezza pensione e pensione completa. Prezzi onesti per un'esperienza autentica.
+  *Contract:* `/schemas/offerte.schema.json` | *Manifest:* `/mcp-manifests/offerte.json`
