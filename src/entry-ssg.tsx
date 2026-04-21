@@ -4,7 +4,7 @@ import { ConfigProvider, PageRenderer, StudioProvider, resolveRuntimeConfig } fr
 import type { JsonPagesConfig, PageConfig, SiteConfig, ThemeConfig } from '@/types';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { ComponentRegistry } from '@/lib/ComponentRegistry';
-import { SECTION_SCHEMAS } from '@/lib/schemas';
+import { SECTION_SCHEMAS, SECTION_SUBMISSION_SCHEMAS } from '@/lib/schemas';
 import { menuConfig, pages, refDocuments, siteConfig, themeConfig } from '@/runtime';
 import tenantCss from '@/index.css?inline';
 
@@ -178,11 +178,13 @@ export function getPageMeta(slug: string): { title: string; description: string 
 export function getWebMcpBuildState(): {
   pages: Record<string, PageConfig>;
   schemas: JsonPagesConfig['schemas'];
+  submissionSchemas: JsonPagesConfig['submissionSchemas'];
   siteConfig: SiteConfig;
 } {
   return {
     pages,
     schemas: SECTION_SCHEMAS as unknown as JsonPagesConfig['schemas'],
+    submissionSchemas: SECTION_SUBMISSION_SCHEMAS as unknown as JsonPagesConfig['submissionSchemas'],
     siteConfig,
   };
 }

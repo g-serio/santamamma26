@@ -7,7 +7,7 @@ import { AboutStripSchema }      from '@/components/about-strip';
 import { ServiceCardsSchema }    from '@/components/service-cards';
 import { TestimonialsSchema }    from '@/components/testimonials';
 import { CtaNatureSchema }       from '@/components/cta-nature';
-import { ContactFormSchema }     from '@/components/contact-form';
+import { ContactFormSchema, ContactFormSubmissionSchema } from '@/components/contact-form';
 import { PricingTableSchema }    from '@/components/pricing-table';
 import { ActivitiesGridSchema }  from '@/components/activities-grid';
 import { KitchenShowcaseSchema } from '@/components/kitchen-showcase';
@@ -27,6 +27,15 @@ export const SECTION_SCHEMAS = {
   'activities-grid':  ActivitiesGridSchema,
   'kitchen-showcase': KitchenShowcaseSchema,
   'gallery-strip':    GalleryStripSchema,
+} as const;
+
+/**
+ * Registry dei submission schemas. Una section-type che compare qui dichiara
+ * sé stessa come MCP-submittable: lo schema Zod descrive il payload che
+ * l'agente deve fornire al tool `submit-form`. Vedi ADR-0002 in @olonjs/core.
+ */
+export const SECTION_SUBMISSION_SCHEMAS = {
+  'contact-form': ContactFormSubmissionSchema,
 } as const;
 
 export type SectionType = keyof typeof SECTION_SCHEMAS;

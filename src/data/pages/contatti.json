@@ -41,6 +41,7 @@
         "addressLine2": "98070 Acquedolci (ME), Sicilia",
         "phone": "+39 0941 XXX XXX",
         "email": "gserio@olon.it",
+        "recipientEmail": "gserio@olon.it",
         "actionUrl": "",
         "submitLabel": "Invia richiesta"
       }

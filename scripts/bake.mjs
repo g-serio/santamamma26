@@ -144,6 +144,7 @@ for (const { slug } of targets) {
     slug,
     pageConfig,
     schemas: webMcpBuildState.schemas,
+    submissionSchemas: webMcpBuildState.submissionSchemas,
     siteConfig: webMcpBuildState.siteConfig,
   });
   await writeJsonTargets(`schemas/${slug}.schema.json`, contract);
@@ -151,6 +152,7 @@ for (const { slug } of targets) {
     slug,
     pageConfig,
     schemas: webMcpBuildState.schemas,
+    submissionSchemas: webMcpBuildState.submissionSchemas,
     siteConfig: webMcpBuildState.siteConfig,
   });
   await writeJsonTargets(buildPageManifestHref(slug).replace(/^\//, ''), pageManifest);
@@ -162,6 +164,7 @@ await writeJsonTargets('config/site.json', webMcpBuildState.siteConfig);
 const mcpManifest = buildSiteManifest({
   pages: webMcpBuildState.pages,
   schemas: webMcpBuildState.schemas,
+  submissionSchemas: webMcpBuildState.submissionSchemas,
   siteConfig: webMcpBuildState.siteConfig,
 });
 await writeJsonTargets('mcp-manifest.json', mcpManifest);

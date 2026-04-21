@@ -97,6 +97,7 @@ export default defineConfig({
               sendJson(res, 200, buildSiteManifest({
                 pages: buildState.pages,
                 schemas: buildState.schemas,
+                submissionSchemas: buildState.submissionSchemas,
                 siteConfig: buildState.siteConfig,
               }));
               return true;
@@ -115,6 +116,7 @@ export default defineConfig({
                 slug,
                 pageConfig,
                 schemas: buildState.schemas,
+                submissionSchemas: buildState.submissionSchemas,
                 siteConfig: buildState.siteConfig,
               }));
               return true;
@@ -133,6 +135,7 @@ export default defineConfig({
                 slug,
                 pageConfig,
                 schemas: buildState.schemas,
+                submissionSchemas: buildState.submissionSchemas,
                 siteConfig: buildState.siteConfig,
               }));
               return true;

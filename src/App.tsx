@@ -8,7 +8,7 @@ import { JsonPagesEngine } from '@olonjs/core';
 import type { JsonPagesConfig, LibraryImageEntry, ProjectState } from '@olonjs/core';
 import { normalizeBasePath, withBasePath } from '@olonjs/core';
 import { ComponentRegistry } from '@/lib/ComponentRegistry';
-import { SECTION_SCHEMAS } from '@/lib/schemas';
+import { SECTION_SCHEMAS, SECTION_SUBMISSION_SCHEMAS } from '@/lib/schemas';
 import { addSectionConfig } from '@/lib/addSectionConfig';
 import { getHydratedData } from '@/lib/draftStorage';
 import type { SiteConfig, ThemeConfig, MenuConfig, PageConfig } from '@/types';
@@ -863,6 +863,7 @@ function App() {
     basePath: APP_BASE_PATH,
     registry: ComponentRegistry as JsonPagesConfig['registry'],
     schemas: SECTION_SCHEMAS as unknown as JsonPagesConfig['schemas'],
+    submissionSchemas: SECTION_SUBMISSION_SCHEMAS as unknown as JsonPagesConfig['submissionSchemas'],
     pages,
     siteConfig,
     themeConfig,
