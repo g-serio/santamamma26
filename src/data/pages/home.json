@@ -7,35 +7,6 @@
   },
   "sections": [
     {
-      "id": "home-hero",
-      "type": "hero",
-      "data": {
-        "badge": "Parco dei Nebrodi · Sicilia",
-        "title": "Benvenuti a",
-        "titleHighlight": "SantaMamma",
-        "description": "Un agriturismo autentico tra querceti secolari, animali selvatici e sapori che sanno di radici. Nel cuore del Parco dei Nebrodi, dove la natura è protagonista assoluta.",
-        "bgImageUrl": {
-          "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1920&q=80",
-          "alt": ""
-        },
-        "ctas": [
-          {
-            "id": "h-cta-1",
-            "label": "Scopri l'Accoglienza",
-            "href": "/accoglienza",
-            "variant": "primary"
-          },
-          {
-            "id": "h-cta-2",
-            "label": "La nostra Cucina",
-            "href": "/cucina",
-            "variant": "secondary"
-          }
-        ],
-        "scrollLabel": "Scorri per scoprire"
-      }
-    },
-    {
       "id": "home-about",
       "type": "about-strip",
       "data": {
@@ -67,6 +38,35 @@
         },
         "imageAlt": "Vista panoramica delle colline dei Nebrodi",
         "imagePosition": "right"
+      }
+    },
+    {
+      "id": "home-hero",
+      "type": "hero",
+      "data": {
+        "badge": "Parco dei Nebrodi · Sicilia",
+        "title": "Benvenuti a",
+        "titleHighlight": "SantaMamma",
+        "description": "Un agriturismo autentico tra querceti secolari, animali selvatici e sapori che sanno di radici. Nel cuore del Parco dei Nebrodi, dove la natura è protagonista assoluta.",
+        "bgImageUrl": {
+          "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1920&q=80",
+          "alt": ""
+        },
+        "ctas": [
+          {
+            "id": "h-cta-1",
+            "label": "Scopri l'Accoglienza",
+            "href": "/accoglienza",
+            "variant": "primary"
+          },
+          {
+            "id": "h-cta-2",
+            "label": "La nostra Cucina",
+            "href": "/cucina",
+            "variant": "secondary"
+          }
+        ],
+        "scrollLabel": "Scorri per scoprire"
       }
     },
     {
